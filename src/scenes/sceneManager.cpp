@@ -23,9 +23,11 @@
 #include "CooperBauhaus.h"
 #include "memoAktenScene.h"
 #include "submotionOrchestraScene.h"
+#include "janVantommeScene.h"
 
 void sceneManager::setup(){
 	
+    scenes.push_back(new janVantommeScene());
 	scenes.push_back(new memoAktenScene());
     scenes.push_back(new submotionOrchestraScene());
 	scenes.push_back(new CooperBauhaus());
